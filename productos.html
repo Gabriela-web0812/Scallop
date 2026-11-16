@@ -41,7 +41,7 @@
 Precio de venta: $250 MXN.
 Para campañas: $125 MXN por playera.
 Para costos y operación: $125 MXN.</p>
-                    <button class="btn btn-success mt-auto">Comprar</button>
+                    <button class="btn btn-success mt-auto" data-bs-toggle="modal" data-bs-target="#modalCompra" onclick="prepararCompra('Playera Scallop', 250)">Comprar</button>
                 </div>
             </div>
 
@@ -52,9 +52,8 @@ Para costos y operación: $125 MXN.</p>
                     <p>Material: cuerpos de plástico reciclado, con tinta y mecanismos internos convencionales.
 Precio de venta: $60 MXN por set de tres.
 Para campañas: $30 MXN por set.
-Para costos y operación: $30 MXN.
-</p>
-                    <button class="btn btn-success mt-auto">Comprar</button>
+Para costos y operación: $30 MXN.</p>
+                    <button class="btn btn-success mt-auto" data-bs-toggle="modal" data-bs-target="#modalCompra" onclick="prepararCompra('Set de plumas Scallop', 60)">Comprar</button>
                 </div>
             </div>
 
@@ -65,9 +64,8 @@ Para costos y operación: $30 MXN.
                     <p>Material: plástico reciclado, preferentemente PP (polipropileno) apto para contacto con bebidas.
 Precio de venta: $120 MXN.
 Para campañas: $60 MXN por vaso.
-Para costos y operación: $60 MXN.
-</p>
-                    <button class="btn btn-success mt-auto">Comprar</button>
+Para costos y operación: $60 MXN.</p>
+                    <button class="btn btn-success mt-auto" data-bs-toggle="modal" data-bs-target="#modalCompra" onclick="prepararCompra('Vaso Scallop', 120)">Comprar</button>
                 </div>
             </div>
 
@@ -78,9 +76,8 @@ Para costos y operación: $60 MXN.
                     <p>Material: cubierta de plástico reciclado, como PET, y hojas de papel reciclado.
 Precio de venta: $100 MXN.
 Para campañas: $50 MXN por cuaderno.
-Para costos y operación: $50 MXN.
-</p>
-                    <button class="btn btn-success mt-auto">Comprar</button>
+Para costos y operación: $50 MXN.</p>
+                    <button class="btn btn-success mt-auto" data-bs-toggle="modal" data-bs-target="#modalCompra" onclick="prepararCompra('Cuaderno Scallop', 100)">Comprar</button>
                 </div>
             </div>
 
@@ -92,7 +89,7 @@ Para costos y operación: $50 MXN.
 Precio de venta: $45 MXN.
 Para campañas: $25 MXN por pieza.
 Para costos y operación: $10 MXN.</p>
-                    <button class="btn btn-success mt-auto">Comprar</button>
+                    <button class="btn btn-success mt-auto" data-bs-toggle="modal" data-bs-target="#modalCompra" onclick="prepararCompra('Llavero de Plástico', 45)">Comprar</button>
                 </div>
             </div>
 
@@ -104,7 +101,7 @@ Para costos y operación: $10 MXN.</p>
 Precio de venta: $280 MXN.
 Para campañas: $190 MXN por pieza.
 Para costos y operación: $110 MXN.</p>
-                    <button class="btn btn-success mt-auto">Comprar</button>
+                    <button class="btn btn-success mt-auto" data-bs-toggle="modal" data-bs-target="#modalCompra" onclick="prepararCompra('Termo Metálico', 280)">Comprar</button>
                 </div>
             </div>
 
@@ -116,7 +113,7 @@ Para costos y operación: $110 MXN.</p>
 Precio de venta: $120 MXN.
 Para campañas: $75 MXN por pieza.
 Para costos y operación: $35 MXN.</p>
-                    <button class="btn btn-success mt-auto">Comprar</button>
+                    <button class="btn btn-success mt-auto" data-bs-toggle="modal" data-bs-target="#modalCompra" onclick="prepararCompra('Mousepad', 120)">Comprar</button>
                 </div>
             </div>
 
@@ -128,7 +125,7 @@ Para costos y operación: $35 MXN.</p>
 Precio de venta: $50 MXN.
 Para campañas: $28 MXN por pieza.
 Para costos y operación: $12 MXN.</p>
-                    <button class="btn btn-success mt-auto">Comprar</button>
+                    <button class="btn btn-success mt-auto" data-bs-toggle="modal" data-bs-target="#modalCompra" onclick="prepararCompra('Lanyard y Porta-Gafete', 50)">Comprar</button>
                 </div>
             </div>
 
@@ -140,7 +137,7 @@ Para costos y operación: $12 MXN.</p>
 Precio de venta: $35 MXN (set de 5 piezas).
 Para campañas: $18 MXN por set.
 Para costos y operación: $8 MXN.</p>
-                    <button class="btn btn-success mt-auto">Comprar</button>
+                    <button class="btn btn-success mt-auto" data-bs-toggle="modal" data-bs-target="#modalCompra" onclick="prepararCompra('Kit de Marcapáginas', 35)">Comprar</button>
                 </div>
             </div>
 
@@ -152,11 +149,119 @@ Para costos y operación: $8 MXN.</p>
 Precio de venta: $130 MXN.
 Para campañas (mayoreo): $80 MXN por pieza.
 Para costos y operación: $40 MXN.</p>
-                    <button class="btn btn-success mt-auto">Comprar</button>
+                    <button class="btn btn-success mt-auto" data-bs-toggle="modal" data-bs-target="#modalCompra" onclick="prepararCompra('Cosmetiquera', 130)">Comprar</button>
                 </div>
             </div>
         </div>
     </main>
+
+    <!-- VENTANA DE COMPRA ACORDE AL ESTILO DE LA PÁGINA -->
+    <div class="modal fade" id="modalCompra" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                
+                <!-- Encabezado igual al header de la página -->
+                <div class="modal-header text-white" style="background-color: #3a508d; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                    <h4 class="modal-title mb-0">Scallop - Formulario de Compra</h4>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+
+                <!-- Barra de resumen con el color bg-info del menú -->
+                <div class="bg-info px-4 py-2 d-flex justify-content-between align-items-center border-bottom">
+                    <div>
+                        <span>Producto: </span>
+                        <strong id="productoElegido">Producto</strong>
+                    </div>
+                    <div>
+                        <span>Total: </span>
+                        <strong class="fs-5" id="totalPagar">$0 MXN</strong>
+                    </div>
+                </div>
+
+                <form onsubmit="confirmarPedido(event)">
+                    <div class="modal-body p-4">
+                        <div class="row">
+                            <!-- COLUMNA 1: DATOS DE ENVÍO -->
+                            <div class="col-md-6 border-end">
+                                <h5 class="text-primary mb-3" style="font-family: cursive;">Datos de Envío</h5>
+                                
+                                <div class="mb-2">
+                                    <label class="form-label">Nombre completo</label>
+                                    <input type="text" id="nombreCliente" class="form-control" placeholder="Ej. Ana López" required>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-7 mb-2">
+                                        <label class="form-label">Correo electrónico</label>
+                                        <input type="email" class="form-control" placeholder="ana@correo.com" required>
+                                    </div>
+                                    <div class="col-5 mb-2">
+                                        <label class="form-label">Teléfono</label>
+                                        <input type="tel" class="form-control" placeholder="55 1234 5678" required>
+                                    </div>
+                                </div>
+
+                                <div class="mb-2">
+                                    <label class="form-label">Calle y número</label>
+                                    <input type="text" class="form-control" placeholder="Av. Reforma #123, Col. Centro" required>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-7 mb-2">
+                                        <label class="form-label">Ciudad / Estado</label>
+                                        <input type="text" class="form-control" placeholder="CDMX" required>
+                                    </div>
+                                    <div class="col-5 mb-2">
+                                        <label class="form-label">Código Postal</label>
+                                        <input type="text" class="form-control" placeholder="06000" maxlength="5" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- COLUMNA 2: CANTIDAD Y PAGO -->
+                            <div class="col-md-6 mt-3 mt-md-0">
+                                <h5 class="text-primary mb-3" style="font-family: cursive;">Cantidad y Pago</h5>
+
+                                <div class="mb-3">
+                                    <label class="form-label">Cantidad de piezas</label>
+                                    <input type="number" id="cantidadProducto" class="form-control" value="1" min="1" max="50" onchange="actualizarTotal()" onkeyup="actualizarTotal()" required>
+                                </div>
+
+                                <div class="card p-3 bg-light">
+                                    <div class="mb-2">
+                                        <label class="form-label">Titular de la tarjeta</label>
+                                        <input type="text" class="form-control" placeholder="Nombre como aparece en la tarjeta" required>
+                                    </div>
+
+                                    <div class="mb-2">
+                                        <label class="form-label">Número de tarjeta</label>
+                                        <input type="text" class="form-control" placeholder="4000 1234 5678 9010" maxlength="19" required>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <label class="form-label">Vencimiento</label>
+                                            <input type="text" class="form-control" placeholder="MM/AA" maxlength="5" required>
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="form-label">CVV</label>
+                                            <input type="password" class="form-control" placeholder="123" maxlength="3" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer bg-light">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-success">Confirmar Compra</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
 
     <footer class="bg-dark text-white text-center p-3">
         <p><strong>Scallop por un planeta mejor</strong></p>
@@ -164,6 +269,42 @@ Para costos y operación: $40 MXN.</p>
         <small>&copy; 2026 Scallop. Todos los derechos reservados.</small>
     </footer>
 
+    <!-- Script de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Lógica de la tienda -->
+    <script>
+        let precioActual = 0;
+
+        function prepararCompra(nombreProducto, precio) {
+            precioActual = precio;
+            document.getElementById('productoElegido').innerText = nombreProducto;
+            document.getElementById('cantidadProducto').value = 1;
+            actualizarTotal();
+        }
+
+        function actualizarTotal() {
+            let cantidad = document.getElementById('cantidadProducto').value;
+            if (cantidad < 1) cantidad = 1;
+            let total = precioActual * cantidad;
+            document.getElementById('totalPagar').innerText = "$" + total + " MXN";
+        }
+
+        function confirmarPedido(evento) {
+            evento.preventDefault();
+            let nombre = document.getElementById('nombreCliente').value;
+            let producto = document.getElementById('productoElegido').innerText;
+            let total = document.getElementById('totalPagar').innerText;
+            let folio = Math.floor(100000 + Math.random() * 900000);
+
+            alert("Pago aprobado, " + nombre + ".\n\n" +
+                  "Número de orden: #SC-" + folio + "\n" +
+                  "Producto: " + producto + "\n" +
+                  "Total pagado: " + total + "\n\n" +
+                  "Gracias por apoyar a Scallop.");
+            
+            location.reload();
+        }
+    </script>
 </body>
 </html>
